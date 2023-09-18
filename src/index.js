@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ProductCard from './ProductCard';
+import Img from './image-1.jpg';
+import Image from './image-2.jpg';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <>
+ <h1 className="title">Product Card</h1>
+ <div className="main-container">
+ <ProductCard img={Img} title="Onion Hair Oil for Hair Regrowth and Hair Fall" prize="₹ 999" btnInc={<i class="fa-solid fa-plus"></i>} btnDec={<i class="fa-solid fa-minus"></i>}/>
+ <ProductCard img={Image} title="wqwe" prize="₹ 999" btnInc={<i class="fa-solid fa-plus"></i>} btnDec={<i class="fa-solid fa-minus"></i>}/>
+ <ProductCard img={Image} title="wqwe" prize="₹ 977" btnInc={<i class="fa-solid fa-plus"></i>} btnDec={<i class="fa-solid fa-minus"></i>}/>
+ <ProductCard img={Image} title="wqwe" prize="₹ 999" btnInc={<i class="fa-solid fa-plus"></i>} btnDec={<i class="fa-solid fa-minus"></i>}/>
+ </div>
+ </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

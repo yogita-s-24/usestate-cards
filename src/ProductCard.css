@@ -1,0 +1,45 @@
+.container{
+    border:1px solid orange;
+    /* padding:30px; */
+    background-color: #ffedcc;
+    border-radius:10px;
+    width:260px;
+    padding: 5px;
+}
+
+
+.img{
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.button-container{
+    text-align: center;
+
+}
+
+.btn{
+    border: 1px solid orange;
+    margin: 0 30px;
+    padding:10px ;
+    border-radius:8px;
+
+
+}
+
+.title{
+    text-align: center;
+    font-family: cursive;
+}
+
+.prize{
+    text-align: center;
+
+}
+
+.count{
+    text-align: center;
+
+}
