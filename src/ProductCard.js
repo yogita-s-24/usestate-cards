@@ -15,6 +15,10 @@ export default function ProductCard({ img, title, prize, btnInc, btnDec }) {
     console.log(count);
   }
 
+  function AddToCart(){
+    alert("Product added Sucessfully.")
+  }
+
   return (
     <>
       <div className="container">
@@ -25,16 +29,16 @@ export default function ProductCard({ img, title, prize, btnInc, btnDec }) {
 
         <p className="title">{title}</p>
         <h5 className="prize">{prize}</h5>
-        <h1 className="count">{count}</h1>
+       
 
         <div className="button-container">
-          <button className="btn" onClick={Increment}>
-            {btnInc}
-          </button>
-          <button className="btn" onClick={Decrement}>
-            {btnDec}
-          </button>
+          <button className="btn" onClick={Decrement}>{btnDec}</button>
+          <h1 className="count">{count}</h1>
+          <button className="btn" onClick={Increment}>{btnInc}</button>
+
         </div>
+          <button className="btn add-btn" onClick={AddToCart}>Add To Cart
+          </button>
       </div>
     </>
   );

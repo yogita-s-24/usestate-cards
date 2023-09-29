@@ -1,45 +1,55 @@
-.container{
-    border:1px solid orange;
-    /* padding:30px; */
-    background-color: #ffedcc;
-    border-radius:10px;
-    width:260px;
-    padding: 5px;
+.container {
+  border: 1px solid #ff4d5b;
+  background-color: white;
+  border-radius: 10px;
+  width: 265px;
+  padding: 3px 5px 20px 5px;
+  box-shadow: #f1c6c6 1px 2px 4px 2px;
 }
 
-
-.img{
-    border-radius: 20px;
-    display: block;
-    margin: 0 auto;
-
+.img {
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
-.button-container{
-    text-align: center;
-
+.button-container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.btn{
-    border: 1px solid orange;
-    margin: 0 30px;
-    padding:10px ;
-    border-radius:8px;
-
-
+.btn {
+  border: none;
+  box-shadow: grey 1px 2px 3px 1px;
+  margin: 0 30px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2717c;
+  height: 35px;
+  cursor: pointer;
 }
 
-.title{
-    text-align: center;
-    font-family: cursive;
+.title {
+  text-align: center;
+  font-family: cursive;
 }
 
-.prize{
-    text-align: center;
-
+.prize {
+  text-align: center;
+  font-size: 20px;
+  color: red;
 }
 
-.count{
-    text-align: center;
+.count {
+  text-align: center;
+  align-items: center;
+}
 
+.add-btn {
+  margin-top: 18px;
+  display: flex;
+  margin: 0 auto;
+  cursor: pointer;
 }
